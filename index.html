@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lanchonete</h1>
+        <div class="menu">
+            <h2>Menu</h2>
+            <div>
+                <label>Cachorro-quente (R$5,00): <input type="number" class="item" data-price="5.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Hambúrguer (R$5,00): <input type="number" class="item" data-price="5.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Batata-frita (R$2,50): <input type="number" class="item" data-price="2.50" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Pizza (R$2,00): <input type="number" class="item" data-price="2.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Pastel (R$2,00): <input type="number" class="item" data-price="2.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Salgado (R$2,00): <input type="number" class="item" data-price="2.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Refrigerante (R$1,00): <input type="number" class="item" data-price="1.00" value="0" min="0"></label>
+            </div>
+            <div>
+                <label>Refresco (R$1,00): <input type="number" class="item" data-price="1.00" value="0" min="0"></label>
+            </div>
+        </div>
+        <div class="total">
+            <h2>Total: R$<span id="total">0.00</span></h2>
+        </div>
+        <div class="payment">
+            <label>Valor pago: R$<input type="number" id="valorPago" step="0.01"></label>
+            <button onclick="calcularTroco()">Calcular Troco</button>
+            <h2>Troco: R$<span id="troco">0.00</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
